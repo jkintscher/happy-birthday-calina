@@ -52,6 +52,7 @@ body {
 
 #story {
   display: none;
+  line-height: 1.45;
   margin: 10% auto 0;
   width: 700px;
   -webkit-animation: fadeIn 0.125s ease;
