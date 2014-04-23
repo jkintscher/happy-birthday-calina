@@ -18,7 +18,7 @@
     };
 
     var form   = document.getElementById('mad-libs'),
-        story  = document.getElementById('story'),
+        story  = document.querySelector('#story .content'),
         prompt = form.querySelector('.prompt'),
         input  = form.querySelector('input#word');
 
@@ -27,6 +27,11 @@
       this.onSubmit.call(this, input.value);
       this.clearInput();
     }.bind(this));
+
+    story.parentNode.querySelector('a.start-over').addEventListener('click', function(evt) {
+      evt.preventDefault();
+      window.location.reload();
+    });
 
     this.onSubmit = function() { };
     this.updatePrompt(initial_prompt);

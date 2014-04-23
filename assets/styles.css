@@ -53,9 +53,29 @@ body {
   display: none;
   margin: 20% auto 0;
   width: 700px;
+  -webkit-animation: fadeIn 0.125s ease;
+  -moz-animation:    fadeIn 0.125s ease;
+  -o-animation:      fadeIn 0.125s ease;
+  animation:         fadeIn 0.125s ease;
 }
 
   #story i {
     font-style: normal;
     border-bottom: 1px dotted #CCC;
   }
+
+  #story footer {
+    border-top: 1px solid #CCC;
+    font-size: 0.5em;
+    margin-top: 1em;
+    padding-top: 1em;
+  }
+
+    #story .start-over {
+      color: #AAA;
+      text-decoration: none;
+    }
+    #story .start-over::before {
+      padding-right: 0.5em;
+      content: '←';
+    }
