@@ -70,7 +70,7 @@
       story;
 
   function init(evt) {
-    story    = new Story(window.STORIES[0]);
+    story    = new Story(window.STORY);
     template = new UI(story.getCurrentBlank() || '');
     template.onSubmit = enteredWord;
   }
