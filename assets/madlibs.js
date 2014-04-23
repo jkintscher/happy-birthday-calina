@@ -39,7 +39,7 @@
       current_blank += 2;
     };
 
-    this.getNextBlank = function() {
+    this.getCurrentBlank = function() {
       var blank = parsed[current_blank];
       return blank ? blank.split(':')[0] : false;
     };
@@ -54,19 +54,18 @@
 
   // App
 
-  var router,
-      template,
+  var template,
       story;
 
   function init(evt) {
     story    = new Story(window.STORIES[0]);
-    template = new UI(story.getNextBlank());
+    template = new UI(story.getCurrentBlank());
     template.onSubmit = enteredWord;
   }
 
   function enteredWord(word) {
     story.fillBlank(word);
-    var next = story.getNextBlank();
+    var next = story.getCurrentBlank();
 
     if (next) {
       template.updatePrompt(next);
