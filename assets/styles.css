@@ -6,6 +6,7 @@
 body {
   font-family: 'Open Sans', 'sans-serif';
   font-size: 2em;
+  margin-bottom: 5em;
 }
 
 #mad-libs {
@@ -51,7 +52,7 @@ body {
 
 #story {
   display: none;
-  margin: 20% auto 0;
+  margin: 10% auto 0;
   width: 700px;
   -webkit-animation: fadeIn 0.125s ease;
   -moz-animation:    fadeIn 0.125s ease;
