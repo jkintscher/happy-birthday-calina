@@ -4,7 +4,11 @@
 
   function UI(initial_prompt) {
     this.updatePrompt = function(type) {
-      var article = 'a' + (type.match(/^[aeo]/i) ? 'n' : '');
+      if (type.match(/^another/)) {
+        var article = '';
+      } else {
+        var article = 'a' + (type.match(/^[aeio]/i) ? 'n' : '');
+      }
       prompt.innerHTML = article + ' <em class="word-class">' + type + '</em>';
     };
 
