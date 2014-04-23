@@ -1,0 +1,36 @@
+@charset "UTF-8";
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6,
+a, b, i, q, p, s, u,
+dl, dt, dd, ol, ul, li, hr,
+small, strike, strong, sub, sup, var,
+del, dfn, em, img, ins, kbd, samp,
+abbr, address, blockquote, cite, pre, code,
+fieldset, form, label, legend, button, input, textarea,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section,
+output, ruby, summary, canvas, embed,
+time, mark, audio, video {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: inherit;
+  font-size: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, main {
+  display: block;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
