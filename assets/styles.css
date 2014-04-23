@@ -65,15 +65,18 @@ body {
   }
 
   #story footer {
-    border-top: 1px solid #CCC;
+    border-top: 1px solid #DDD;
     font-size: 0.5em;
-    margin-top: 1em;
+    margin-top: 2em;
     padding-top: 1em;
   }
 
     #story .start-over {
-      color: #AAA;
+      color: #CCC;
       text-decoration: none;
+    }
+    #story .start-over:hover {
+      color: #999;
     }
     #story .start-over::before {
       padding-right: 0.5em;
