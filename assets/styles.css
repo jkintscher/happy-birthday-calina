@@ -9,7 +9,7 @@ body {
 }
 
 #mad-libs {
-  margin: 400px auto 0;
+  margin: 20% auto 0;
   width: 800px;
   text-align: right;
 }
@@ -23,6 +23,7 @@ body {
       text-align: right;
       -webkit-transition: top 0.125s linear;
       transition: top 0.125s linear;
+
       -webkit-animation: fadeIn 0.25s ease;
       -moz-animation:    fadeIn 0.25s ease;
       -o-animation:      fadeIn 0.25s ease;
@@ -47,9 +48,10 @@ body {
   display: block;
 }
 
+
 #story {
   display: none;
-  margin: 0 auto;
+  margin: 20% auto 0;
   width: 700px;
 }
 
