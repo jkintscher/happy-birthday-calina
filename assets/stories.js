@@ -19,7 +19,7 @@ window.STORY =
   "<br />" +
   "<br />" +
   "Quickly she looks back over her shoulder: It&rsquo;s Christopher walking in with " +
-  "Pickles, his girlfriend&rsquo;s {{animal:dog}}. Being the {{adjective:loving}} person Calina is she greets " +
+  "Pickles, his girlfriend&rsquo;s {{animal:dog}}. Being the {{adjective:loving}} person Calina is, she greets " +
   "Pickles {{adverb:heartwarmingly}}. After a while of playing with it she reaches for her " +
   "phone in order to share their {{adjective:cute}} picture with the world." +
   "<br />" +
@@ -33,7 +33,7 @@ window.STORY =
   "favorite tunes at his desk across from her. &ldquo;What happened?&rdquo;. Also her " +
   "second question goes unanswered when a familar thought comes to mind: " +
   "&ldquo;Sometimes I wish I would be working from {{location:within a whale&rsquo;s heart}}. No drama, " +
-  "just being at piece.&rdquo;, she thinks. " +
+  "just being at peace.&rdquo;, she thinks. " +
   "<br />" +
   "<br />" +
   "Finally going back to answering all the {{adjective:important}} questions about {{activity:time " +
