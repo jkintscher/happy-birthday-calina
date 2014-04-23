@@ -64,7 +64,7 @@
       });
     };
 
-    this.loadFromBase64 = function(base64) {
+    this.loadFromEncoded = function(base64) {
       try {
         blanks = this.decode(base64).split(',');
         // Make sure we retrieved a valid number of words from b64
@@ -75,11 +75,11 @@
     };
 
     this.encode = function() {
-      return window.btoa(encodeURIComponent(escape(blanks)));
+      return encodeURIComponent(escape(blanks));
     };
 
     this.decode = function(encoded) {
-      return unescape(decodeURIComponent(window.atob(encoded)));
+      return unescape(decodeURIComponent(encoded));
     }
   }
 
@@ -94,7 +94,7 @@
     template.onSubmit = enteredWord;
 
     var hash = window.location.hash.substr(1);
-    if (hash && story.loadFromBase64(hash)) {
+    if (hash && story.loadFromEncoded(hash)) {
       template.revealStory(story.compile());
     } else {
       window.location.hash = '';
