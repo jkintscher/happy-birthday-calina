@@ -63,8 +63,8 @@
     this.compile = function() {
       var index = 0;
       return text.replace(MUSTACHE_REGEX, function(match, submatch) {
-        var original = submatch.split(':')[1];
-        return '<i title="' + original + '">' + blanks[index++] + '</i>';
+        var prompt = submatch.split(':');
+        return '<i title="' + prompt[1] + ' (' + prompt[0] + ')">' + blanks[index++] + '</i>';
       });
     };
 
