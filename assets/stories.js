@@ -38,7 +38,7 @@ window.STORY =
   "<br />" +
   "Finally going back to answering all the {{adjective:important}} questions about {{activity:time " +
   "tracking}} and {{another activity:invoicing}} she stumbles across a strangely looking link. " +
-  "It takes her to a {{appearance:beautiful}} website that, after prompting her to input " +
+  "It takes her to a {{adjective (looks):beautiful}} website that, after prompting her to input " +
   "{{count:several}} words, presents her with a precise write-up of her morning. " +
   "Reading it with great {{feeling:pleasure}} all the way to the end makes her understand " +
   "the reasons for all of the {{adjective:weird}} events of her morning: " +
