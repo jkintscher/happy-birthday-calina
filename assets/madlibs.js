@@ -30,6 +30,7 @@
 
     story.parentNode.querySelector('a.start-over').addEventListener('click', function(evt) {
       evt.preventDefault();
+      window.location.hash = '';
       window.location.reload();
     });
 
@@ -62,6 +63,24 @@
         return '<i title="' + original + '">' + blanks[index++] + '</i>';
       });
     };
+
+    this.loadFromBase64 = function(base64) {
+      try {
+        blanks = this.decode(base64).split(',');
+        // Make sure we retrieved a valid number of words from b64
+        return Math.floor(parsed.length / blanks.length) <= 2;
+      } catch (e) {
+        return false;
+      }
+    };
+
+    this.encode = function() {
+      return window.btoa(encodeURIComponent(escape(blanks)));
+    };
+
+    this.decode = function(encoded) {
+      return unescape(decodeURIComponent(window.atob(encoded)));
+    }
   }
 
   // App
@@ -73,6 +92,13 @@
     story    = new Story(window.STORY);
     template = new UI(story.getCurrentBlank() || '');
     template.onSubmit = enteredWord;
+
+    var hash = window.location.hash.substr(1);
+    if (hash && story.loadFromBase64(hash)) {
+      template.revealStory(story.compile());
+    } else {
+      window.location.hash = '';
+    }
   }
 
   function enteredWord(word) {
@@ -82,6 +108,7 @@
     if (next) {
       template.updatePrompt(next);
     } else {
+      window.location.hash = story.encode();
       template.revealStory(story.compile());
     }
   }
