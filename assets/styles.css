@@ -83,5 +83,5 @@ body {
     }
     #story .start-over::before {
       padding-right: 0.5em;
-      content: '←';
+      content: '\2190';
     }
