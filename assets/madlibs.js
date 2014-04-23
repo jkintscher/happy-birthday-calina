@@ -57,8 +57,9 @@
 
     this.compile = function() {
       var index = 0;
-      return text.replace(MUSTACHE_REGEX, function() {
-        return '<i>' + blanks[index++] + '</i>';
+      return text.replace(MUSTACHE_REGEX, function(match, submatch) {
+        var original = submatch.split(':')[1];
+        return '<i title="' + original + '">' + blanks[index++] + '</i>';
       });
     };
   }
