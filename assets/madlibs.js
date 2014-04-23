@@ -71,7 +71,7 @@
 
   function init(evt) {
     story    = new Story(window.STORIES[0]);
-    template = new UI(story.getCurrentBlank());
+    template = new UI(story.getCurrentBlank() || '');
     template.onSubmit = enteredWord;
   }
 
