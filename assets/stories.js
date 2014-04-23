@@ -9,7 +9,7 @@ window.STORY =
   "The kettle boils, and the first round of tickets awaits." +
   "<br />" +
   "<br />" +
-  "While walking back to her {{location:desk}} through the empty office she thinks about " +
+  "While walking back to her desk through the empty office she thinks about " +
   "that latest {{noun:short story}} by George Saunders. &ldquo;What a great {{occupation:writer}}&rdquo;, she says " +
   "to herself. Calina is {{adjective (mood):delighted}} as usual and looking forward to another {{adjective:fun}} " +
   "and {{another adjective:exciting}} day at Harvest, {{verb (-ing):helping out}} customers and becoming better at " +
@@ -40,7 +40,7 @@ window.STORY =
   "tracking}} and {{another activity:invoicing}} she stumbles across a strangely looking link. " +
   "It takes her to a {{appearance:beautiful}} website that, after prompting her to input " +
   "{{count:several}} words, presents her with a precise write-up of her morning. " +
-  "Reading it with great {{noun (mood):pleasure}} all the way to the end makes her understand " +
+  "Reading it with great {{feeling:pleasure}} all the way to the end makes her understand " +
   "the reasons for all of the {{adjective:weird}} events of her morning: " +
   "It&rsquo;s her {{occasion:birthday}}!" +
   "<br />" +
