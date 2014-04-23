@@ -1,23 +1,24 @@
 @-webkit-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@-moz-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@-o-keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@-moz-keyframes    fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@-o-keyframes      fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes         fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 body {
   font-family: 'Open Sans', 'sans-serif';
   font-size: 2em;
   margin-bottom: 5em;
+  padding-right: 200px;
 }
 
 #mad-libs {
   margin: 20% auto 0;
-  width: 800px;
+  width: 840px;
   text-align: right;
 }
   #mad-libs label {
     padding: 0.5em 0 0.5em;
     display: inline-block;
-    width: 368px;
+    width: 408px;
   }
     .prompt {
       display: inline-block;
