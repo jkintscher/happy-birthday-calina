@@ -8,12 +8,12 @@ body {
   font-size: 2em;
 }
 
-.mad-libs {
+#mad-libs {
   margin: 400px auto 0;
   width: 800px;
   text-align: right;
 }
-  .mad-libs label {
+  #mad-libs label {
     padding: 0.5em 0 0.5em;
     display: inline-block;
     width: 368px;
@@ -33,9 +33,27 @@ body {
         font-weight: 700;
       }
 
-  .mad-libs input[name="word"] {
+  #mad-libs input[name="word"] {
     border: 0 none;
     border-bottom: 1px solid #999;
     padding: 0.5em 0 0.125em 0.125em;
     width: 400px;
+  }
+
+#mad-libs.complete {
+  display: none;
+}
+#mad-libs.complete + #story {
+  display: block;
+}
+
+#story {
+  display: none;
+  margin: 0 auto;
+  width: 700px;
+}
+
+  #story i {
+    font-style: normal;
+    border-bottom: 1px dotted #CCC;
   }

@@ -12,7 +12,13 @@
       input.value = '';
     };
 
-    var form   = document.querySelector('form.mad-libs'),
+    this.revealStory = function(text) {
+      form.classList.add('complete');
+      story.innerHTML = text;
+    };
+
+    var form   = document.getElementById('mad-libs'),
+        story  = document.getElementById('story'),
         prompt = form.querySelector('.prompt'),
         input  = form.querySelector('input#word');
 
@@ -47,7 +53,7 @@
     this.compile = function() {
       var index = 0;
       return text.replace(MUSTACHE_REGEX, function() {
-        return blanks[index++];
+        return '<i>' + blanks[index++] + '</i>';
       });
     };
   }
@@ -70,8 +76,7 @@
     if (next) {
       template.updatePrompt(next);
     } else {
-      console.log('Your Story:');
-      console.log(story.compile());
+      template.revealStory(story.compile());
     }
   }
 
